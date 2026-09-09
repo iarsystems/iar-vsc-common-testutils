@@ -1,0 +1,44 @@
+{
+  "name": "iar-vsc-common-testutils",
+  "version": "1.0.0",
+  "description": "Common test/development code for all IAR VS Code extensions",
+  "exports": {
+    "./*": "./dist/*.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "watch": "tsc -p . --watch",
+    "prepare": "husky install && tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.iar.se/ide/vscode/iar-vsc-common-testutils"
+  },
+  "author": "iarsystems",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.33.0",
+    "eslint": "^10.0.0",
+    "globals": "^15.0.0",
+    "husky": "^8.0.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.4.1",
+    "java-properties": "^1.0.2",
+    "mocha": "^11.0.1",
+    "mocha-junit-reporter": "^2.0.2"
+  }
+}
