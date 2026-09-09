@@ -6,7 +6,8 @@
     "./*": "./dist/*.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "typesVersions": {
     "*": {
