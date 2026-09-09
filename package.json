@@ -5,6 +5,10 @@
   "exports": {
     "./*": "./dist/*.js"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "typesVersions": {
     "*": {
       "*": [
